@@ -1,0 +1,40 @@
+.inputContainer {
+  padding: 10px;
+  max-width: 300px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+}
+
+.checkBoxContainer {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px;
+  max-width: 300px;
+}
+.checkBox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.checkBoxLabel {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 927px) {
+  .checkBoxContainer {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-left: 0px;
+    display: block !important;
+  }
+}

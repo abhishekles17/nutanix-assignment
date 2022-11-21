@@ -1,0 +1,114 @@
+.img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s ease;
+}
+
+.img:hover {
+  transform: scale(1.5);
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.name {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.cardContainer {
+  cursor: pointer;
+}
+
+.albumDetails {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 679px) {
+  .albumDetails {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.albumTexts {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 679px) {
+  .albumTexts {
+    margin-top: 20px;
+  }
+}
+.marginTop {
+  margin-top: 10px;
+}
+
+.colorRed {
+  font-weight: 600;
+  color: red;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 679px) {
+  .button-container {
+    margin: auto;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.add-to-favourite {
+  padding: 10px;
+  cursor: pointer;
+  background: green;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.add-to-favourite:hover {
+  background: darkolivegreen;
+}
+
+.remove-from-favourite {
+  padding: 10px;
+  cursor: pointer;
+  background: red;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.remove-from-favourite:hover {
+  background: darkred;
+}
+
+.closeIcon {
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
