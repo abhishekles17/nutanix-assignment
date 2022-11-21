@@ -42,8 +42,8 @@ function App() {
   const filterBySearch = (list, searchedValue) => {
     if (searchedValue) {
       return list.filter((item) => {
-        if (item["im:artist"].label.includes(searchedValue)) return true;
-        if (item["im:name"].label.includes(searchedValue)) return true;
+        if (item["im:artist"].label.toUpperCase().includes(searchedValue.toUpperCase())) return true;
+        if (item["im:name"].label.toUpperCase().includes(searchedValue.toUpperCase())) return true;
 
         return false;
       });
